@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+
+<body>
+   <h2 style="text-align: center">Formulario de Inscripcion</h2>
+    <section style="text-align: center">
+        <form method="GET" action="aplicacion/proceso" style="margin: 5px">
+           <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input type="nombre" class="form-control" id="nombre" placeholder="Ingrese nombre">
+              <label for="apellido" class="form-label">Apellido:</label>
+              <input type="apellido" class="form-control" id="apellido" placeholder="Ingrese apellido">
+              <label for="dni" class="form-label">Dni:</label>
+              <input type="number" class="form-control" id="dni" placeholder="Ingrese dni">
+            </div>
+            
+                <label for="provincia" class="form-label">Provincia:</label>
+                <input class="form-control" list="datalistOptions" id="provincia" placeholder="Seleccione provincia...">
+                    <datalist id="datalistOptions">
+                    <option value="Buenos aires">
+                    <option value="Jujuy">
+                    <option value="Salta">
+                    <option value="Tucuman">
+                    <option value="Santa Fe">
+                    <option value="Formosa">
+                    <option value="Chaco">
+                    <option value="La Pampa">
+                    <option value="Chubut">
+                    <option value="Santa Cruz">
+                    <option value="San Juan">
+                    <option value="Corrientes">
+                    </datalist>
+            
+            <p>Sexo:</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                <label class="form-check-label" >Maculino</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino">
+                <label class="form-check-label" >Femenino</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="femenino" value="otro">
+                <label class="form-check-label" >Otro</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="sexo" id="femenino" value="Prefiero no decirlo">
+                <label class="form-check-label" >Prefiero NO decirlo</label>
+            </div>
+            
+            <div>
+                <label for="telefono" class="form-label">Telefono:</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Ingrese telefono">
+              <label for="mail" class="form-label">Mail:</label>
+              <input type="email" class="form-control" id="mail" placeholder="Ingrese mail">
+            </div>
+            
+           <p>Trabaja Actualmente?</p>
+           <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="trabaja" id="trabaja" value="si">
+              <label class="form-check-label" for="trabaja">SI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="trabaja" id="trabaja" value="no">
+              <label class="form-check-label" for="trabaja">NO</label>
+            </div>
+            <p>Estudia Actualmente?</p>
+           <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="estudia" id="estudia" value="si">
+              <label class="form-check-label" for="estudia">SI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="estudia" id="estudia" value="no">
+              <label class="form-check-label" for="estudia">NO</label>
+            </div>
+            <p>Posee conocimietos de programacion?</p>
+           <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="programa" id="programa" value="si">
+              <label class="form-check-label" for="programa">SI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="programa" id="programa" value="no">
+              <label class="form-check-label" for="programa">NO</label>
+            </div>
+             <p>Posee acceso a internet?</p>
+           <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="internet" id="trabaja" value="si">
+              <label class="form-check-label" for="internet">SI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="internet" id="internet" value="no">
+              <label class="form-check-label" for="internet">NO</label>
+            </div>
+            <p>Tiene acceso a una computadora?</p>
+           <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="computadora" id="trabaja" value="si">
+              <label class="form-check-label" for="computadora">SI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="computadora" id="trabaja" value="no">
+              <label class="form-check-label" for="computadora">NO</label>
+            </div>
+            
+            <p>Elija horario de preferencia para cursada</p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="turno-mañana" value="mañana">
+              <label class="form-check-label" for="turno-mañana">Mañana</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="turno-tarde" value="tarde">
+              <label class="form-check-label" for="turno-tarde">Tarde</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="turno-noche" value="noche">
+              <label class="form-check-label" for="turno-noche">Noche</label>
+            </div>
+           
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
